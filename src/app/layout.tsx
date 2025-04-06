@@ -3,6 +3,7 @@ import { Inter, IBM_Plex_Mono } from "next/font/google";
 import Frame from "@/components/frame";
 import "./globals.css";
 import Logo from "@/components/logo";
+import { AnalyticsProvider } from "./providers";
 
 const inter = Inter({
   variable: "--font-inter",
@@ -45,23 +46,25 @@ export default function RootLayout({
       className={`${inter.variable} ${ibmPlexMono.variable} font-mono antialiased`}
     >
       <body className="divide-y divide-dashed divide-slate-300 bg-slate-100 text-balance text-slate-800 dark:divide-neutral-700 dark:bg-neutral-900 dark:text-neutral-200">
-        <nav className="sticky top-0 z-20 bg-inherit">
-          <Frame>
-            <div className="flex items-center gap-2">
-              <Logo className="shrink-0 text-slate-900 dark:text-neutral-200" />
-              <p>
-                <span className="font-semibold">Focus</span> — productivity app
-                for product managers and designers for $10 per month.
-              </p>
-            </div>
-          </Frame>
-        </nav>
-        {children}
-        <footer>
-          <Frame showCorners={false}>
-            <div>Focus Company 2025</div>
-          </Frame>
-        </footer>
+        <AnalyticsProvider>
+          <nav className="sticky top-0 z-20 bg-inherit">
+            <Frame>
+              <div className="flex items-center gap-2">
+                <Logo className="shrink-0 text-slate-900 dark:text-neutral-200" />
+                <p>
+                  <span className="font-semibold">Focus</span> — productivity
+                  app for product managers and designers for $10 per month.
+                </p>
+              </div>
+            </Frame>
+          </nav>
+          {children}
+          <footer>
+            <Frame showCorners={false}>
+              <div>Focus Company 2025</div>
+            </Frame>
+          </footer>
+        </AnalyticsProvider>
       </body>
     </html>
   );
