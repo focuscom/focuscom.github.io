@@ -1,8 +1,6 @@
-interface LogoProps {
-  className?: string;
-}
+export default function Logo() {
+  const coordinates = { x1: 12, y1: 4, x2: 12, y2: 20 };
 
-export default function Logo({ className }: LogoProps) {
   return (
     <svg
       width="24"
@@ -10,24 +8,14 @@ export default function Logo({ className }: LogoProps) {
       viewBox="0 0 24 24"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
-      className={className}
+      className="shrink-0 stroke-slate-800 group-hover:animate-spin dark:stroke-neutral-200"
+      strokeLinecap="round"
+      strokeWidth={1.75}
     >
-      <path
-        fillRule="evenodd"
-        clipRule="evenodd"
-        d="M8.53333 13.5L11.5588 19.1728C11.7471 19.5257 12.2529 19.5257 12.4412 19.1728L15.4667 13.5H8.53333Z"
-        fill="currentColor"
-      />
-      <path
-        d="M11.5588 19.1728L12.2206 18.8199L12.2206 18.8199L11.5588 19.1728ZM8.53333 13.5V12.75H7.28333L7.87156 13.8529L8.53333 13.5ZM12.4412 19.1728L13.1029 19.5257L13.1029 19.5257L12.4412 19.1728ZM15.4667 13.5L16.1284 13.8529L16.7167 12.75H15.4667V13.5ZM12.2206 18.8199L9.19509 13.1471L7.87156 13.8529L10.8971 19.5257L12.2206 18.8199ZM11.7794 18.8199C11.8735 18.6434 12.1265 18.6434 12.2206 18.8199L10.8971 19.5257C11.3676 20.4081 12.6323 20.4081 13.1029 19.5257L11.7794 18.8199ZM14.8049 13.1471L11.7794 18.8199L13.1029 19.5257L16.1284 13.8529L14.8049 13.1471ZM15.4667 12.75H8.53333V14.25H15.4667V12.75Z"
-        fill="currentColor"
-      />
-      <path
-        fillRule="evenodd"
-        clipRule="evenodd"
-        d="M8.72467 4.80674C8.61794 4.40651 8.20698 4.16858 7.80675 4.27531C7.40652 4.38204 7.16859 4.79301 7.27532 5.19323L8.82378 11H10.3762L8.72467 4.80674ZM11.25 11H12.75V4.99999C12.75 4.58577 12.4142 4.24999 12 4.24999C11.5858 4.24999 11.25 4.58577 11.25 4.99999V11ZM13.6238 11H15.1762L16.7247 5.19323C16.8314 4.79301 16.5935 4.38204 16.1932 4.27531C15.793 4.16858 15.382 4.40651 15.2753 4.80674L13.6238 11ZM15.95 11H17.65L20.6618 5.35293C20.8567 4.98745 20.7184 4.53315 20.3529 4.33822C19.9875 4.1433 19.5332 4.28156 19.3382 4.64705L15.95 11ZM6.34999 11H8.04999L4.66176 4.64705C4.46684 4.28156 4.01254 4.1433 3.64705 4.33822C3.28157 4.53315 3.14331 4.98745 3.33823 5.35293L6.34999 11Z"
-        fill="currentColor"
-      />
+      <line {...coordinates} />
+      <line {...coordinates} transform="rotate(45, 12, 12)" />
+      <line {...coordinates} transform="rotate(-45, 12, 12)" />
+      <line {...coordinates} transform="rotate(90, 12, 12)" />
     </svg>
   );
 }
