@@ -7,7 +7,7 @@ export default function Priorities() {
       <Container>
         <div className="flex flex-col justify-center p-4">
           <h2 className="mt-8 mb-4 text-center md:mt-16">
-            Focus on what trully matter
+            Focus on what trully matters
           </h2>
           <p className="mb-4 text-center">
             When priorities are scattered, progress stalls. Bring your personal
