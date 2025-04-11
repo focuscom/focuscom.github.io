@@ -19,6 +19,8 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     url: "https://focuscom.io/",
+    images: "/og/home.jpg",
+    siteName: "Focus",
   },
   icons: {
     icon: [
