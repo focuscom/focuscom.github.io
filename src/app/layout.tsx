@@ -13,7 +13,11 @@ const ibmPlexMono = IBM_Plex_Mono({
 
 export const metadata: Metadata = {
   title: "Focus",
-  description: "Focus on what trully matters.",
+  description: "Focus official website.",
+  openGraph: {
+    description: "Focus on what trully matters.",
+    images: "/og/home.jpg",
+  },
   icons: {
     icon: [
       {
