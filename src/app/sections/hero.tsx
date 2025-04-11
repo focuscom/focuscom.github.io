@@ -32,11 +32,11 @@ export default function Hero() {
               className="rounded border border-slate-300 shadow-2xl dark:hidden"
             />
             <Image
+              priority
               src="images/hero-dark.png"
               width={common.width}
               height={common.height}
               alt={common.alt}
-              priority
               className="hidden rounded border border-neutral-700 shadow-2xl dark:block"
             />
           </Sunken>

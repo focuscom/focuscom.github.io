@@ -115,7 +115,8 @@ export function ToolsIllustration() {
     <div className="relative flex min-h-88 w-full flex-1 items-center justify-center overflow-hidden bg-slate-100 mask-radial-from-0% mask-radial-at-center dark:bg-neutral-900">
       <div className="z-10 flex h-20 w-20 shrink-0 scale-50 items-center justify-center rounded-full border border-slate-300 bg-slate-50 dark:border-neutral-700 dark:bg-neutral-800">
         <Image
-          src="images/slack-light.svg"
+          unoptimized
+          src="logos/slack-light.svg"
           width={32}
           height={32}
           alt="Slack logo"
@@ -123,14 +124,16 @@ export function ToolsIllustration() {
       </div>
       <div className="z-10 flex h-20 w-20 shrink-0 scale-60 items-center justify-center rounded-full border border-slate-300 bg-slate-50 dark:border-neutral-700 dark:bg-neutral-800">
         <Image
-          src="images/miro-light.svg"
+          unoptimized
+          src="logos/miro-light.svg"
           width={32}
           height={32}
           alt="Miro logo"
           className="dark:hidden"
         />
         <Image
-          src="images/miro-dark.svg"
+          unoptimized
+          src="logos/miro-dark.svg"
           width={32}
           height={32}
           alt="Miro logo"
@@ -139,7 +142,8 @@ export function ToolsIllustration() {
       </div>
       <div className="z-10 flex h-20 w-20 shrink-0 scale-80 items-center justify-center rounded-full border border-slate-300 bg-slate-50 dark:border-neutral-700 dark:bg-neutral-800">
         <Image
-          src="images/jira-light.svg"
+          unoptimized
+          src="logos/jira-light.svg"
           width={32}
           height={32}
           alt="Jira logo"
@@ -148,14 +152,16 @@ export function ToolsIllustration() {
 
       <div className="z-10 mx-4 flex h-20 w-20 shrink-0 items-center justify-center rounded-full border border-slate-300 bg-slate-50 dark:border-neutral-700 dark:bg-neutral-800">
         <Image
-          src="images/focus-light.svg"
+          unoptimized
+          src="logos/focus-light.svg"
           width={32}
           height={32}
           alt="Focus logo"
           className="dark:hidden"
         />
         <Image
-          src="images/focus-dark.svg"
+          unoptimized
+          src="logos/focus-dark.svg"
           width={32}
           height={32}
           alt="Focus logo"
@@ -165,14 +171,16 @@ export function ToolsIllustration() {
 
       <div className="z-10 flex h-20 w-20 shrink-0 scale-80 items-center justify-center rounded-full border border-slate-300 bg-slate-50 dark:border-neutral-700 dark:bg-neutral-800">
         <Image
-          src="images/linear-light.svg"
+          unoptimized
+          src="logos/linear-light.svg"
           width={32}
           height={32}
           alt="Linear logo"
           className="dark:hidden"
         />
         <Image
-          src="images/linear-dark.svg"
+          unoptimized
+          src="logos/linear-dark.svg"
           width={32}
           height={32}
           alt="Linear logo"
@@ -181,7 +189,8 @@ export function ToolsIllustration() {
       </div>
       <div className="z-10 flex h-20 w-20 shrink-0 scale-60 items-center justify-center rounded-full border border-slate-300 bg-slate-50 dark:border-neutral-700 dark:bg-neutral-800">
         <Image
-          src="images/figma-light.svg"
+          unoptimized
+          src="logos/figma-light.svg"
           width={32}
           height={32}
           alt="Figma logo"
@@ -189,14 +198,16 @@ export function ToolsIllustration() {
       </div>
       <div className="z-10 flex h-20 w-20 shrink-0 scale-50 items-center justify-center rounded-full border border-slate-300 bg-slate-50 dark:border-neutral-700 dark:bg-neutral-800">
         <Image
-          src="images/github-light.svg"
+          unoptimized
+          src="logos/github-light.svg"
           width={32}
           height={32}
           alt="GitHub logo"
           className="dark:hidden"
         />
         <Image
-          src="images/github-dark.svg"
+          unoptimized
+          src="logos/github-dark.svg"
           width={32}
           height={32}
           alt="GitHub logo"
