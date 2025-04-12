@@ -1,12 +1,12 @@
-import Hero from "./sections/hero";
-import SimplicityVersions from "./sections/simplicity-versions";
-import Priorities from "./sections/priorities";
-import CTA from "./sections/cta";
+import Hero from "./components/hero";
+import SimplicityVersions from "./components/simplicity-versions";
+import Priorities from "./components/priorities";
+import CTA from "./components/cta";
 // import Pricing from "./sections/pricing";
 // import Versions from "./sections/versions";
 // import Presentation from "./sections/presentation";
 // import Progress from "./sections/progress";
-import ToolsSecurity from "./sections/tools-security";
+import ToolsSecurity from "./components/tools-security";
 
 export default function Home() {
   return (
