@@ -18,14 +18,14 @@ export default function Priorities() {
         <Image
           width={1512}
           height={500}
-          src="images/priorities-light-min.png"
+          src="images/priorities-light.png"
           alt="Priorities"
           className="max-h-[500px] w-full mask-r-from-70% mask-b-from-70% object-cover object-top-left dark:hidden"
         />
         <Image
           width={1512}
           height={500}
-          src="images/priorities-dark-min.png"
+          src="images/priorities-dark.png"
           alt="Priorities"
           className="hidden max-h-[500px] w-full mask-r-from-70% mask-b-from-70% object-cover object-top-left dark:block"
         />
